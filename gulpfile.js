@@ -1,7 +1,7 @@
 var gulp        = require('gulp');
 var ts          = require('gulp-typescript');
 var plumber     = require('gulp-plumber');
-var rimraf      = require('gulp-rimraf');
+var del         = require('del');
 var connect     = require('gulp-connect');
 var open        = require('gulp-open');
 
@@ -15,8 +15,7 @@ var tsOptions   = {
                    };
 
 gulp.task('clean', function() {
-    return gulp.src(destination + '/**/*.js', { read: false }) // much faster
-        .pipe(rimraf());
+    return del.sync(destination + '/**/*.js');
 });
 
 gulp.task('ts', ['clean'], function() {
