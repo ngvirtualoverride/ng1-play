@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+<div ng-controller="DemoCtrl as demo">
+    <h1>{{demo.message}}</h1>
+</div>
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+    System.import('app/app').catch(console.error.bind(console));
+</script>
+</body>
+</html>
