@@ -1,4 +1,4 @@
-ng2-play
+ng1-play
 ========
 
 The goal of this repo is to prepare a minimal ("walking skeleton") project build with Angular 1.4, ES6 and TypeScript 1.5 
